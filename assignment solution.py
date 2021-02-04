@@ -96,4 +96,4 @@ for entry in links:
     time.sleep(2) #we use time.sleep to avoid getting our IP blocked  
     
 df = pd.DataFrame.from_records(listofdicts)
-df.to_csv("C:/Users/SHIVAM/Documents/Web Scraping/output.csv", index=False, header=True)
+df.to_csv("output.csv", index=False, header=True)
