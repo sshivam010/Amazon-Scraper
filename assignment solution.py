@@ -81,7 +81,7 @@ base_url = 'https://www.amazon.in/s?k=books&ref=nb_sb_noss_2'
 page = requests.get(base_url, headers=HEADERS)
 main_soup = BeautifulSoup(page.content, 'html.parser')
 links = get_links(base_url)
-
+print("Creating Output file")
 for entry in links:
     temp_page = requests.get(entry, headers=HEADERS)
     soup = BeautifulSoup(temp_page.content, 'html.parser')
@@ -97,3 +97,4 @@ for entry in links:
     
 df = pd.DataFrame.from_records(listofdicts)
 df.to_csv("output.csv", index=False, header=True)
+print("Done.")
