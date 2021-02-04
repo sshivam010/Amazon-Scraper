@@ -1,7 +1,9 @@
 # Amazon-Scraper
 Scrapes information like Product Name, Price, Rating , Review Counts, Availability, etc from amazon.
 
-Hello,
+Usage :  
+
+`python amazon.py`
 
 I have extracted information like name, price, rating, review count and availabililty of books on amazon , using BeautifulSoup and Requests library.  
 The code will extract information about books because I have hardcoded the url(Result page when you search 'Books' on Amazon).  
